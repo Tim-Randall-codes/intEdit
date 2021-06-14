@@ -11,7 +11,18 @@ struct ContentView2: View {
     @StateObject var viewRouter: ViewRouter
     var body: some View {
         VStack {
-            Text("hi page 2")
+            Button("square the number", action: {
+                switchh = 0
+            })
+            Button("add 5 to the number", action: {
+                switchh = 1
+            })
+            Button("double the number", action: {
+                switchh = 2
+            })
+            Button("cube the number", action: {
+                switchh = 3
+            })
             Button("make calculation", action: {
                 viewRouter.currentPage = .page1
         })

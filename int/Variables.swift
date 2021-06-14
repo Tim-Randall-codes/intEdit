@@ -14,3 +14,5 @@ enum Page {
 class ViewRouter: ObservableObject {
     @Published var currentPage: Page = .page1
 }
+
+var switchh: Int = 0
